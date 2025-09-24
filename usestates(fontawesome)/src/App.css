@@ -1,0 +1,123 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.menu {
+  width: 70%;
+  position: fixed;
+  left: -100%;
+  height: 100vh;
+  transition: 0.5s;
+  text-align: left;
+  font-size: 25px;
+  background-color: yellow;
+}
+.menu ul li {
+  list-style: none;
+  padding: 10px 0px;
+}
+.activeMenu {
+  left: 0%;
+}
+.micon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.modalOverlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.Modaldiv {
+  width: 320px;
+  height: 320px;
+  background-color: white;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 500%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.en {
+  position: fixed;
+  right: -30px;
+  transform: rotate(90deg);
+  top: 100px;
+}
+.modalShow {
+  display: block;
+}
+.divShow {
+  top: 50%;
+}
+.faqOuter{
+  width: 1320px;
+  margin: auto;
+
+}
+.faqItems{
+  border: 1px solid red;
+  margin-bottom: 20px;
+}
+.faqItems h1{
+  margin: 0px;
+  padding: 10px;
+  background-color: #282c34;
+  color: white;
+  text-align: left;
+  cursor: pointer;
+
+}
+.faqItems p{
+  text-align: left;
+  padding: 0px;
+  transition: 0.5s;
+  height: 0px;
+  transform: scaleY(0);
+  margin: 0px;
+
+
+}
+.activeAns{
+  height: auto !important;
+  transform: scaleY(1) !important;
+  padding: 10px !important;
+}
