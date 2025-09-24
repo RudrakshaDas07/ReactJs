@@ -1,4 +1,4 @@
-# React.js
+# React.Js
 
 A modern React application built with the latest features, best practices, and cutting-edge tooling for scalable, maintainable, and performant web applications.
 
